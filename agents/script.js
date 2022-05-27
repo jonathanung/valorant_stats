@@ -25,6 +25,12 @@ var agentDict = {
     "Jett": 18
 }
 
+$(document).ready(function() {
+    // PAGE IS FULLY LOADED  
+    // FADE OUT YOUR OVERLAYING DIV
+    $('.loader').fadeOut(1000);
+});
+
 //for changing the agent
 
 function changeAgent(el) {

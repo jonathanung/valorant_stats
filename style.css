@@ -217,3 +217,29 @@ a:visited {
 select {
     color: lightblue;
 }
+
+.loader {
+    align-self: center;
+    border: 32px solid black;
+    border-top: 32px solid lightblue;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    animation: spin 0.5s linear infinite;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

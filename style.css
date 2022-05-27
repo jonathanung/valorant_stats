@@ -1,0 +1,219 @@
+@import url('http://fonts.cdnfonts.com/css/valorant');
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    background-image: none;
+    background-size: contain;
+    list-style: none;
+    font-family: 'VALORANT', sans-serif;
+}
+
+.portrait {
+    margin: 0 auto;
+    opacity: 70%;
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+    background-color: lightgray;
+}
+
+.nav {
+    background-color: #383838;
+    display: flex;
+    margin: 0px auto;
+    font-family: 'VALORANT', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 1000px;
+}
+
+.nav * {
+    background-color: #383838;
+}
+
+.red {
+    color: red;
+}
+
+.nav-title {
+    color: white;
+    padding: 6px 15px;
+    margin-left: 100px;
+    font-size: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px 15px;
+    margin-right: 100px;
+    font-size: 32px;
+}
+
+.nav-links a:link,
+a:visited {
+    background-color: #383838;
+    color: lightgrey;
+    padding: 6px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a:hover {
+    background-color: #383838;
+    color: red;
+}
+
+.nav-links a:active {
+    background-color: red;
+    color: rgba(255, 255, 255, 0.811);
+}
+
+.content {
+    background-color: #1e2c39;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 200px auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    border-radius: 25px;
+    min-width: 1000px;
+    opacity: 97%;
+}
+
+.content>* {
+    background-color: #1e2c39;
+    min-width: 1000px;
+    opacity: 97%;
+}
+
+.content-head {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: darkred;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    opacity: 100%;
+}
+
+.content-head * {
+    background-color: darkred;
+}
+
+#agent-pfp {
+    width: 200px;
+    border-radius: 25%;
+    padding: 15px;
+    margin-left: 25px;
+}
+
+.head-title {
+    font-size: 90px;
+    font-family: 'VALORANT', sans-serif;
+    font-weight: bold;
+    margin: 30px 30px 10px 30px;
+    hyphens: auto;
+}
+
+.role {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.role-img {
+    width: 32px;
+    margin-right: 15px;
+}
+
+.head-description {
+    font-family: 'VALORANT', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 25px 50px 50px;
+    text-overflow: clip;
+}
+
+.abilities {
+    background-color: #383838;
+    padding: 20px 10px;
+}
+
+.abilities * {
+    background-color: #383838;
+}
+
+.abilityheader {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.icons,
+.ability {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icons img {
+    width: 128px;
+}
+
+.ability li {
+    width: 128px;
+    text-align: center;
+}
+
+.main {
+    background-color: #1e2c39;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.main * {
+    background-color: #1e2c39;
+    margin: 50px 15px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.agent-select {
+    margin-left: 20px;
+}
+
+.main li {
+    margin-bottom: 50px;
+}
+
+select {
+    color: lightblue;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pagetitle">dev1azn's valorant info site</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body onload="loadMapData()">
+    <div class="overlay">
+        <img class="portrait" id="portrait">
+        <div class="nav">
+            <h1 class="nav-title"><span class="red">Valorant</span> Info Dump</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../agents/agents.html">Agents</a></li>
+                <li><a href="#">Ranks</a></li>
+                <li><a href="maps.html">Maps</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content-head">
+                <img class="head-img" id="map-pfp" alt="map-pic" title="Click me to play my voiceline!" onclick="playVoiceline()">
+                <div class="map-and-role">
+                    <h1 class="head-title" id="map-name">Map</h1>
+                    <div class="role">
+                        <img src="" class="role-img" id="role-img">
+                        <h2 class="head-role" id="map-role">Role</h2>
+                        <select onchange="changeMap(this)" class="map-select" id="map-select">
+                        <option id="fade-opt">Fade</option>
+                        <option id="breach-opt">Breach</option>
+                        <option id="raze-opt">Raze</option>
+                        <option id="chamber-opt">Chamber</option>
+                        <option id="kay/o-opt">KAY/O</option>
+                        <option id="skye-opt">Skye</option>
+                        <option id="cypher-opt">Cypher</option>
+                        <option id="sova-opt">Sova</option>
+                        <option id="killjoy-opt">Killjoy</option>
+                        <option id="viper-opt">Viper</option>
+                        <option id="phoenix-opt">Phoenix</option>
+                        <option id="astra-opt">Astra</option>
+                        <option id="brimstone-opt">Brimstone</option>
+                        <option id="neon-opt">Neon</option>
+                        <option id="yoru-opt">Yoru</option>
+                        <option id="sage-opt">Sage</option>
+                        <option id="reyna-opt">Reyna</option>
+                        <option id="omen-opt">Omen</option>
+                        <option id="jett-opt">Jett</option>
+                    </select>
+                    </div>
+                </div>
+                <h4 class="head-description" id="map-description"></h4>
+            </div>
+            <div class="abilities">
+                <h1 class="abilityheader">Abilities</h2>
+                    <ul class="icons" id="ab-icon">
+                        <li id="p-ab-img-li"><img id="p-ab-img" src=""></li>
+                        <li id="c-ab-img-li"><img id="c-ab-img" src=""></li>
+                        <li id="q-ab-img-li"><img id="q-ab-img" src=""></li>
+                        <li id="e-ab-img-li"><img id="e-ab-img" src=""></li>
+                        <li id="x-ab-img-li"><img id="x-ab-img" src=""></li>
+                    </ul>
+                    <ul class="ability" id="ab-name">
+                        <li id="p-ab-li"></li>
+                        <li id="c-ab-li"></li>
+                        <li id="q-ab-li"></li>
+                        <li id="e-ab-li"></li>
+                        <li id="x-ab-li"></li>
+                    </ul>
+            </div>
+            <div class="main">
+                <p class="chartype" id="chartype">chartype</p>
+                <p class="roletype" id="roletype">roletype</p>
+                <p class="charrolefill" id="charrolefill">rolefill</p>
+                <ul class="ability2" id="ab-name2">
+                    <li id="p-ab-li2"></li>
+                    <li id="c-ab-li2"></li>
+                    <li id="q-ab-li2"></li>
+                    <li id="e-ab-li2"></li>
+                    <li id="x-ab-li2"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
